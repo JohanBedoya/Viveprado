@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de trabajo - Vive Prado</title>
+    <link rel="stylesheet" href="../Styles/header/header.css">
+    <link rel="stylesheet" href="../Styles/footer/footer.css">
+    <link rel="stylesheet" href="../Styles/generalTittle/generalTittle.css">
+    <link rel="stylesheet" href="../Styles/jobofferts/jobOfferts.css">
+    <link rel="stylesheet" href="../Styles/widget/widget.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html"><img src="../assets/images/LOGO.PNG" alt="logo"></a>
+
+            <i class="fa-solid fa-bars abrir-menu" id="abrir"></i>
+            <div class="nav__menu" id="navbar">
+                <i class="fa-solid fa-x cerrar-menu" id="cerrar"></i>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" id="inicio">Inicio</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="../quehaypahacer.html">¿Qué hay pa’ hacer?</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="informacion.html">Información</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="#imagenes">Imágenes</a></li>
+                            <li><a href="#">Noticias</a></li>
+                        </ul>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="tienda.html">Tienda</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="html/ofertasEmpleo.html">Empleos</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="../index.html#radioFM" id="radio">Radio</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html">Podcast</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Cada titulo en celulares tiene caracteristiicas en común, por eso tiene un apartado propio en css -->
+        <div class="tittle-oferts">
+            <h1 class="oferts">OFERTAS DE EMPLEO</h1>
+        </div>
+        <!-- En este apartado encontramos un formulario de busqueda -->
+        <div class="search-container">
+            <form action="" class="form-search">
+                <input type="text" placeholder="Palabras Claves" class="searchInput">
+                <input type="text" placeholder="Ubicación" class="searchInput">
+                <input type="button" value="Buscar Trabajos" class="buttom_search">
+            </form>
+            <!-- Aparte, encontramos los modulos de especificidad en la busqueda -->
+            <div class="checkbox-container">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="Contratista" class="checkbox" value="Contratista"> <span class="text-checkbox">Contratista</span>
+                </label>
+                <hr>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="Interno" class="checkbox"> <span class="text-checkbox">Interno</span>
+                </label>
+                <hr>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="Medio Tiempo" class="checkbox"> <span class="text-checkbox">Medio Tiempo</span>
+                </label>
+                <hr>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="Temporal" class="checkbox"> <span class="text-checkbox">Temporal</span>
+                </label>
+                <hr>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="Tiempo Completo" class="checkbox"> <span class="text-checkbox">Tiempo Completo</span>
+                </label>
+                <hr>
+                
+            </div>
+            <div class="result-search">
+                <!-- Aquí van a verse los resultados de busqueda -->
+                <p class="advertens">
+                    <!-- En caso de no encontrarse resultados, este mensaje quedará a flote -->
+                    No se Encontraron Resultados 
+                </p>
+                <img src="/assets/icons/sadicon.svg" alt="" class="sadEmoticon">
+            </div>
+        </div>
+            <!-- Lo recomendable es que en las cards de trabajos, solo se encuentren 6 por página -->
+        <section class="jobs">
+            <!-- Aqui empieza la card -->
+             
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="../assets/images/job-images/coomulsap.jpg" alt="" class="job-image">
+                    </div>
+                    <div class="job-companyNmae-container">
+                        <h3 class="job-tittle">Lorem ipsum dolor sit amet.</h3>
+                        <p class="companyName">lorem</p>
+                    </div>
+                    <div class="job-info-container-general">
+                        <hr>
+                        <div class="job-info-container">
+                            <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                            <p class="tipe">Tiempo completo</p>
+                        </div>
+                        <hr>
+                        <div class="job-info-container">
+                            <img src="/assets/icons/destin.svg" alt="" class="icon">
+                            <p class="tipe">San Antonio de Prado</p>
+                        </div>
+                        <hr>
+                        <div class="job-info-container">
+                            <img src="/assets/icons/date.svg" alt="" class="icon">
+                            <p class="tipe">24 abril, 2024</p>
+                        </div>
+                        <hr>
+                        <div class="job-button-container">
+                            <a href="" class="link-button">Más Información...</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- Aqui empieza la card -->
+            <div class="job-card">
+                <div class="job-image-container">
+                    <img src="/assets/images/job-images/jobimage.svg" alt="" class="job-image">
+                </div>
+                <div class="job-companyNmae-container">
+                    <h3 class="job-tittle">Técnico eléctrico, electromécanico, mecatrónico, electrónica industrial.</h3>
+                    <p class="companyName">Solobus</p>
+                </div>
+                <div class="job-info-container-general">
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                        <p class="tipe">Tiempo completo</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/destin.svg" alt="" class="icon">
+                        <p class="tipe">Medellín - Antioquia</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/date.svg" alt="" class="icon">
+                        <p class="tipe">24 abril, 2024</p>
+                    </div>
+                    <hr>
+                    <div class="job-button-container">
+                        <a href="" class="link-button">Más Información...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui empieza la card -->
+            <div class="job-card">
+                <div class="job-image-container">
+                    <img src="/assets/images/job-images/jobimage.svg" alt="" class="job-image">
+                </div>
+                <div class="job-companyNmae-container">
+                    <h3 class="job-tittle">Operario de bus</h3>
+                    <p class="companyName">Solobus</p>
+                </div>
+                <div class="job-info-container-general">
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                        <p class="tipe">Tiempo completo</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/destin.svg" alt="" class="icon">
+                        <p class="tipe">San antonio de Prado</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/date.svg" alt="" class="icon">
+                        <p class="tipe">24 abril, 2024</p>
+                    </div>
+                    <hr>
+                    <div class="job-button-container">
+                        <a href="" class="link-button">Más Información...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui empieza la card -->
+            <div class="job-card">
+                <div class="job-image-container">
+                    <img src="/assets/images/job-images/jobimage.svg" alt="" class="job-image">
+                </div>
+                <div class="job-companyNmae-container">
+                    <h3 class="job-tittle">Controlador de despachos en vía</h3>
+                    <p class="companyName">Solobus</p>
+                </div>
+                <div class="job-info-container-general">
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                        <p class="tipe">Tiempo completo</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/destin.svg" alt="" class="icon">
+                        <p class="tipe">Medellín - Antioquia</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/date.svg" alt="" class="icon">
+                        <p class="tipe">24 abril, 2024</p>
+                    </div>
+                    <hr>
+                    <div class="job-button-container">
+                        <a href="" class="link-button">Más Información...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui empieza la card -->
+            <div class="job-card">
+                <div class="job-image-container">
+                    <img src="/assets/images/job-images/jobimage.svg" alt="" class="job-image">
+                </div>
+                <div class="job-companyNmae-container">
+                    <h3 class="job-tittle">Analista contable</h3>
+                    <p class="companyName">Solobus</p>
+                </div>
+                <div class="job-info-container-general">
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                        <p class="tipe">Tiempo completo</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/destin.svg" alt="" class="icon">
+                        <p class="tipe">Medellín - Antioquia</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/date.svg" alt="" class="icon">
+                        <p class="tipe">24 abril, 2024</p>
+                    </div>
+                    <hr>
+                    <div class="job-button-container">
+                        <a href="" class="link-button">Más Información...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui empieza la card -->
+            <div class="job-card">
+                <div class="job-image-container">
+                    <img src="/assets/images/job-images/jobimage.svg" alt="" class="job-image">
+                </div>
+                <div class="job-companyNmae-container">
+                    <h3 class="job-tittle">Operario de bus</h3>
+                    <p class="companyName">Solobus</p>
+                </div>
+                <div class="job-info-container-general">
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/jobtime.svg" alt="" class="icon">
+                        <p class="tipe">Tiempo completo</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/destin.svg" alt="" class="icon">
+                        <p class="tipe">Medellín - Antioquia</p>
+                    </div>
+                    <hr>
+                    <div class="job-info-container">
+                        <img src="/assets/icons/date.svg" alt="" class="icon">
+                        <p class="tipe">24 abril, 2024</p>
+                    </div>
+                    <hr>
+                    <div class="job-button-container">
+                        <a href="" class="link-button">Más Información...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__columnas">
+            <div class="columna">
+                <figure>
+                    <a href="#"><img src="../assets/images/LOGO.PNG" alt="Logo"></a>
+                </figure>
+            </div>
+            <div class="columna">
+                <div class="texto-footer">
+                    <h2>Vive Prado</h2>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>
+                        +57 3216413683</p>
+                    <p><i class="fa-solid fa-envelope"></i>
+                        Info.viveprado@gmail.com</p>
+                    <p><i class="fa-solid fa-house"></i>
+                        Carrera 79 #42sur 26 interior 225</p>
+                </div>
+            </div>
+            <div class="columna">
+                <h2>Contacto</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/vivepradoSAP/" target="_blank" class="fa-brands fa-facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOCwf5El4oFlm1K-n_yQqYQ/videos" target="_blank"
+                        class="fa-brands fa-youtube"></a>
+                    <a href="https://www.instagram.com/vive.prado/" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.tiktok.com/@viveprado" target="_blank" class="fa-brands fa-tiktok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="derechos">
+            <small>&copy; 2024 <b>Vive Prado</b> - Todos los derechos reservados.</small>
+        </div>
+    </footer>
+    <iframe src="./widget.html" style="border:none; width:100%; height:150px;"></iframe>
+    <script src="../js/widget/widget.js"></script>
+    <script src="https://kit.fontawesome.com/5714a607c8.js" crossorigin="anonymous"></script>
+    <script src="../js/Inicio/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast - Viveprado</title>
+    <link rel="stylesheet" href="Styles/podcast2/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3cb2cfcdc2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-200">
+    <div class="flex h-screen ">
+        <!-- Sidebar -->
+        <aside class="bg-white p-5 h-full md:w-2/5 lg:w-1/5 flex flex-col items-center shadow-2xl overflow-y-auto overflow-x-hidden">
+            <div class="mb-1 hidden md:block text-center">
+                <h1 class="text-xl font-bold"><a href="index.html">VIVEPRADO</a></h1>
+                <h2 class="text-2xl font-extrabold text-emerald-600"><a href="podcast.html">PODCAST</a></h2>
+            </div>
+            <hr class="w-full hidden md:block my-4" />
+            <nav class="w-full">
+                <p class="hidden md:block p-2 text-xl font-semibold opacity-40">Menú</p>
+                <ul class="space-y-14 mt-24 md:mt-0 md:space-y-4">
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-compass fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Explorar</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-fire fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Tendencias</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-music fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Género</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-microphone fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Podcasters</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-heart fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Favoritos</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fas fa-play-circle fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Playlist</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="https://wa.me/573216413683" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fa-brands fa-whatsapp fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="index.html" class="flex items-center justify-center md:justify-start p-2 text-gray-700 md:hover:bg-gray-200 hover:text-emerald-600 hover:rounded-xl w-full">
+                            <i class="fa-solid fa-house fa-xl md:fa-lg"></i>
+                            <span class="hidden md:inline ml-2">Viveprado</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- El main -->
+        <main class="flex-grow p-5 overflow-auto">
+            <!-- Header -->
+            <header class="flex flex-col md:flex-row items-center justify-center md:justify-between mb-5">
+                <div class="relative w-full md:w-2/4 lg:w-2/3 mb-4 md:mb-0 flex justify-center">
+                    <input type="text" placeholder="Buscar aquí" class="w-full p-2 pl-10 border rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+                </div>
+                <div class="flex items-center sm:relative lg:fixed md:right-20 md:mr-10">
+                    <img src="assets/images/podcast2-img/viveprado.jpg" alt="Perfil" class="w-10 h-10 rounded-full">
+                    <span class="ml-1 mr-4"><a href="index.html">Viveprado</a></span>
+                </div>
+            </header>
+            
+            <!-- REPRODUCTOR Y RECIENTES (MOBILE)-->
+            <aside class="lg:w-1/4 flex flex-col space-y-4 lg:fixed right-8 block sm:hidden mb-4">
+                <div class="relative shadow-2xl rounded-lg h-[15rem]">
+                    <img src="assets/images/podcast2-img/reproductor.avif" class="absolute inset-0 w-full h-full object-cover rounded-lg" alt="Reproductor">
+                    <!--240x240-->
+                    <div class="bg-white bg-opacity-70 absolute bottom-2 left-2 right-2 h-[8rem] z-10 rounded-lg px-2">
+                        <p class="font-bold text-center text-lg text-black">Juan Bernardo Vargas</p>
+                        <p class="text-center text-xs">Autor viveprado</p>
+                        <div class="flex flex-col items-center justify-center">
+                            <!-- Contador de progreso -->
+                            <div class="flex justify-between w-full">
+                                <span id="current-time-mobile" class="text-sm text-gray-700">0:00</span>
+                                <span id="progress-total-mobile" class="text-sm text-gray-700">3:00</span>
+                            </div>
+                            <!-- Contenedor del rango -->
+                            <div class="relative w-full">
+                                <input class="custom-range" type="range" min="0" step="1" value="0" id="progress-bar-mobile">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="pause-mobile text-xl text-white bg-gray-800 h-[2rem] w-[2rem] rounded-full hover:text-white flex items-center justify-center">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="play-mobile text-xl text-white bg-emerald-600 hover:text-gray-900 rounded-full h-[2rem] w-[2rem] flex items-center justify-center">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <audio id="podcast-stream-mobile" src="https://vivepradodemo.netlify.app/assets/audios/PADRE-JUAN-BERNARDO.mp3"></audio>
+                    </div>
+                </div>
+                                  
+
+                <div class="bg-white shadow-lg p-4 rounded-lg h-[16rem] overflow-auto">
+                    <h2 class="relative text-xl font-semibold mb-2">Recientes</h2>
+                    <div class="flex flex-col space-y-4 mb-1">
+                        <!-- Recientes -->
+                        <article class="flex items-center space-x-2">
+                            <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                            <!--48x48-->
+                            <div>
+                                <h3 class="text-lg font-bold">Podcast Reciente 1</h3>
+                                <p class="text-sm text-gray-600">Con David</p>
+                            </div>
+                        </article>
+                        <article class="flex items-center space-x-2">
+                            <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                            <div>
+                                <h3 class="text-lg font-bold">Podcast Reciente 2</h3>
+                                <p class="text-sm text-gray-600">Con David</p>
+                            </div>
+                        </article>
+                        <article class="flex items-center space-x-2">
+                            <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                            <div>
+                                <h3 class="text-lg font-bold">Podcast Reciente 3</h3>
+                                <p class="text-sm text-gray-600">Con David</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Slider, Reproductor y recientes -->
+            <section class="flex flex-col lg:flex-row gap-4 mb-8">
+                <div class="lg:w-2/3 flex flex-col">
+                    <!-- Slider -->
+                    <div class="relative slider-wrapper rounded-2xl mb-4">
+                        <div class="slider">
+                            <!-- Slides -->
+                            <div class="slide h-[15rem]">
+                                <img src="assets/images/podcast2-img/prueba21.webp" alt="Slide 1" class="w-full h-full object-cover">
+                                <!-- 960x240-->
+                            </div>
+                            <div class="slide h-[15rem]">
+                                <img src="assets/images/podcast2-img/prueba3.webp" alt="Slide 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide h-[15rem]">
+                                <img src="assets/images/podcast2-img/prueba4.webp" alt="Slide 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide h-[15rem]">
+                                <img src="assets/images/podcast2-img/podcast42.webp" alt="Slide 3" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <!-- Botones del slider -->
+                        <button class="slider-button left rounded-full" onclick="scrollSlider(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-button right rounded-full" onclick="scrollSlider(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Sección de Historias Populares -->
+                    <div class="bg-white p-4 shadow-lg rounded-lg space-y-5">
+                        <h2 class="relative text-xl font-semibold mb-4 main-titulos">Historias Populares</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!--Imagenes 300 x200 -->
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 bg-white p-4 shadow-lg rounded-lg space-y-5">
+                        <h2 class="relative text-xl font-semibold mb-4 main-titulos">Recomendado para tí</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!--Imagenes 300 x200 -->
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                            <article class="p-4 rounded-lg h-45 shadow-xl">
+                                <img src="assets/images/podcast2-img/populares.jpg" alt="Podcast" class="w-full h-24 object-cover rounded-lg mb-2">
+                                <h3 class="text-lg font-bold">John Delony Show</h3>
+                                <p class="text-gray-600">Con John Delony</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="lg:w-1/4 flex flex-col space-y-4 lg:fixed right-8 hidden sm:block">
+                    <div class="relative shadow-2xl rounded-lg h-[15rem]">
+                        <img src="assets/images/podcast2-img/reproductor.avif" class="absolute inset-0 w-full h-full object-cover rounded-lg" alt="Reproductor">
+                        <!--240x240-->
+                        <div class="bg-white bg-opacity-70 absolute bottom-2 left-2 right-2 h-[8rem] z-10 rounded-lg px-2">
+                            <p class="font-bold text-center text-lg text-black">Juan Bernardo Vargas</p>
+                            <p class="text-center text-xs">Autor viveprado</p>
+                            <div class="flex flex-col items-center justify-center">
+                                <!-- Contador de progreso -->
+                                <div class="flex justify-between w-full">
+                                    <span id="current-time-desktop" class="text-sm text-gray-700">0:00</span>
+                                    <span id="progress-total-desktop" class="text-sm text-gray-700">3:00</span>
+                                </div>
+                                <!-- Contenedor del rango -->
+                                <div class="relative w-full">
+                                    <input class="custom-range" type="range" min="0" step="1" value="0" id="progress-bar-desktop">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <button class="pause-desktop text-xl text-white bg-gray-800 h-[2rem] w-[2rem] rounded-full hover:text-white flex items-center justify-center">
+                                    <i class="fas fa-pause"></i>
+                                </button>
+                                <button class="play-desktop text-xl text-white bg-emerald-600 hover:text-gray-900 rounded-full h-[2rem] w-[2rem] flex items-center justify-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <audio id="podcast-stream-desktop" src="https://vivepradodemo.netlify.app/assets/audios/PADRE-JUAN-BERNARDO.mp3"></audio>
+                        </div>
+                    </div>
+                                      
+
+                    <div class="bg-white shadow-lg p-4 rounded-lg h-[16rem] overflow-auto">
+                        <h2 class="relative text-xl font-semibold mb-2">Recientes</h2>
+                        <div class="flex flex-col space-y-4 mb-1">
+                            <!-- Recientes -->
+                            <article class="flex items-center space-x-2">
+                                <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                                <!--48x48-->
+                                <div>
+                                    <h3 class="text-lg font-bold">Podcast Reciente 1</h3>
+                                    <p class="text-sm text-gray-600">Con David</p>
+                                </div>
+                            </article>
+                            <article class="flex items-center space-x-2">
+                                <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                                <div>
+                                    <h3 class="text-lg font-bold">Podcast Reciente 2</h3>
+                                    <p class="text-sm text-gray-600">Con David</p>
+                                </div>
+                            </article>
+                            <article class="flex items-center space-x-2">
+                                <img src="assets/images/podcast2-img/recientes.jpg" alt="Podcast" class="w-12 h-12 object-cover rounded-md shadow-xl">
+                                <div>
+                                    <h3 class="text-lg font-bold">Podcast Reciente 3</h3>
+                                    <p class="text-sm text-gray-600">Con David</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/podcast/main.js" defer></script>
+    <script src="js/podcast/emisora.js" defer></script>    
+</body>
+
+</html>

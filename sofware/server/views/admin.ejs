@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>publicaciones-demo</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="left-header">
+                <img src="" alt="logo de la empresa" class="logo-sofware">
+                <ul class="header-options">
+                    <li class="podcast-list-section">
+                        <a href="" class="podcast-link">podcast</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="right-operations-container">
+
+            <form action="/admin" class="form-container" method="post">
+                <label for="ubload-fotos">Foto del Podcast</label>
+                <input type="file" name="ubloadFotos" id="ubloadFotos"> <br>
+
+                <label for="podcast-name">Nombre del podcast</label>
+                <input type="text" name="podcastName" id="podcastName"> <br>
+
+                <label for="realizador">Realizador</label>
+                <input type="text" name="realizador" id="realizador"> <br>
+
+                <label for="date">Fecha de Subida</label>
+                <input type="date" name="date" id="date"><br>
+
+                <label for="description">Descripción del Podcast</label><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea> <br>
+
+                <input type="submit" value="registrar">
+            </form>
+
+            <section class="podcast-example-Container">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="" alt="" id="imageSave">
+                    </div>
+                    <div class="titulo-podcast-container">
+                        <h1 id="tittleSaved"></h1>
+                    </div>
+                    <div class="date-autor-container">
+                        <p id="autorSaved"></p> <hr> <p id="dateSaved"></p>
+                    </div>
+                    <div class="description-container">
+                        <p id="descriptionSaved"></p>
+                    </div>
+                    <div class="buttom-container">
+                        <input type="submit" value="ESCUCHAR">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- <script src="../js/podcast.js"></script> -->
+</body>
+</html>

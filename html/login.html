@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/header/header.css">
+    <link rel="stylesheet" href="/Styles/generalTittle/generalTittle.css">
+    <link rel="stylesheet" href="/Styles/mainForm/form.css">
+    <link rel="stylesheet" href="/Styles/registro/registro.css">
+    <link rel="stylesheet" href="../Styles/widget/widget.css">
+</head>
+<body class="container-body">
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html"><img src="../assets/images/LOGO.PNG" alt="logo"></a>
+
+            <i class="fa-solid fa-bars abrir-menu" id="abrir"></i>
+            <div class="nav__menu" id="navbar">
+                <i class="fa-solid fa-x cerrar-menu" id="cerrar"></i>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#header" id="inicio">Inicio</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="quehaypahacer.html">¿Qué hay pa’ hacer?</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="html/informacion.html">Información</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="#imagenes">Imágenes</a></li>
+                            <li><a href="#">Noticias</a></li>
+                        </ul>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="tienda.html">Tienda</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="html/ofertasEmpleo.html">Empleos</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="#" id="radio">Radio</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html">Podcast</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="login">
+        <div class="container-login">
+            <div class="row-login">
+                <div class="col-login">
+                    <h1 class="tittle-login">REGISTRO</h4> <br><br>
+                    <form class="form-login">
+                          <div class="name-login">
+                            <label>Nombre Completo</label> 
+                            <input id="correo" placeholder="Javier Lopez Bedoya" >                             
+                          </div> 
+                          <div class="date-login">
+                              <label>Fecha de Nacimiento</label>
+                              <input  class="date" id="fecha" placeholder="DD/MM/YYYY" >                          
+                          </div> 
+                          <div class="user-login">
+                            <label>Usuario</label>
+                            <input type="pasword" class="form-control" id="contrseña" placeholder="" >                             
+                          </div>
+                          <div class="email-login">
+                              <label>Correo Electronico</label>
+                              <input type="email" class="form-control" id="correo"  placeholder="javierL@gmail.com">                             
+                          </div>
+                          <div class="pasword-login">
+                              <label>Contraseña</label>
+                              <input  class="form-control" id="correo" placeholder="Minimo 6 Caracteres" >                             
+                          </div>
+                          <div class="repeat-login">
+                              <label>Repetir Contraseña</label>
+                              <input  class="form-control" id="correo"  >                             
+                          </div>
+                           
+                          
+                          <button class="button-login" type="submit">Registrarse</button> 
+                </div>
+            </div>
+        </div> 
+    </main>
+    
+    <script src="../js/widget/widget.js"></script>
+    <script src="/js/header.js"></script>
+</body>

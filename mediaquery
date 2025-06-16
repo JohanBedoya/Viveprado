@@ -1,0 +1,15 @@
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para iPads y tabletas */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas pequeñas y portátiles */
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Estilos para computadoras de escritorio y pantallas grandes */
+}
+
+@media (min-width: 1201px) {
+    /* Estilos para pantallas extra grandes, TV, etc. */
+}

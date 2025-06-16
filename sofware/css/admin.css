@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.left-header {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    height: 100vh;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+}
+.logo-sofware{
+    display: flex;
+    margin: 1em;
+}
+.header-options {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.podcast-list-section {
+    list-style: none;
+}
+.podcast-link {
+    text-decoration: none;
+}
+.right-operations-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    overflow: hidden;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em;
+    box-shadow: 10px 10px 20px rgb(212, 212, 212);
+    background-color: rgb(212, 255, 212);
+    border-radius: 10px;
+    margin: 5em;
+    align-items: center;
+}
+input {
+    border: none;
+    height: 3em;
+    border-radius: 2em;
+    box-shadow: 2px 2px 5px grey;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.image-ubload-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 10px 10px 20px rgb(212, 212, 212);
+    background-color: rgb(212, 255, 212);
+    border-radius: 5px;
+    padding: 1em;
+}
+.info-operation-container{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 10px 10px 20px rgb(212, 212, 212);
+    background-color: rgb(212, 255, 212);
+    border-radius: 5px;
+   padding: 2em; 
+}
+.description-ubload-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 10px 10px 20px rgb(212, 212, 212);
+    background-color: rgb(212, 255, 212);
+    border-radius: 5px;
+    padding: 2em;
+}
+.podcast-example-rightContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+    padding: 2em;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 255, 217);
+    box-shadow: 10px 10px 20px rgb(212, 212, 212);
+    width: 25em;
+    height: 40em;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 15px;
+}
+.image-container{
+    display: flex;
+    background-color: aquamarine;
+    width: 20em;
+    height: 20em;
+    border-radius: 10px;
+}
+.titulo-podcast-container {
+    display: flex;
+    background-color: aqua;
+    width: 20em;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.date-autor-container {
+    display: flex;
+    width: 20em;
+    height: 2.5em;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.description-container {
+    display: flex;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 20em;
+    height: 20em;
+}
+.buttom-container {
+    display: flex;
+    width: 20em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+}

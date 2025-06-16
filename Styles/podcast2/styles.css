@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow: hidden;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    right: .625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .5rem;
+    height: .5rem;
+    background-color: rgb(5 150 105);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:hover::after {
+    opacity: 1;
+}
+
+.recientes::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    width: .3125rem;
+    background-color: #28a745; 
+    border-radius: 2px; 
+}
+.recientes {
+    padding: .625rem;
+}
+
+.main-titulos::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    width: .3125rem;
+    background-color: #28a745; 
+    border-radius: 2px; 
+}
+.main-titulos{
+    padding: .625rem;
+}
+/* Estilos del slider */
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.slide {
+    flex: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botones de navegación */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
+}
+
+article {
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+/* Reproductor */
+/* styles.css */
+.custom-range {
+    -webkit-appearance: none;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto; /* Centra el control deslizante dentro del contenedor */
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(5 150 105); /* Color de la bolita */
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4ade80; /* Color de la bolita */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media (max-width: 765px) {
+    li::after {
+        display: none;
+    }
+    .sidebar {
+        position: fixed;
+    }
+
+    .main {
+        margin-left: 5rem;
+    }
+
+}
+
+

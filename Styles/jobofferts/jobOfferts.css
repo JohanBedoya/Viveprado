@@ -1,0 +1,197 @@
+:root {
+    --fuente-principal: 'Typo Hoop Demo', sans-serif;
+    --fuente-texto: Arial, Helvetica, sans-serif;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-search {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 3em;
+    gap: 2em;
+    background-color: rgb(241, 255, 240);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 0;
+    animation: fade-in 3s ease forwards;
+}
+.buttom_search {
+    background-color: rgb(85, 141, 0);
+    font-size: 1.3em;
+    color: white;
+    padding: 1em;
+}
+.searchInput {
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.checkbox-container {
+    display: flex;
+    font-size: 1.3em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+    opacity: 0;
+    animation: fade-in 2.5s ease forwards;
+}
+.text-checkbox {
+    font-size: 1em; 
+    font-family: var(--fuente-texto);
+}
+.result-search {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    gap: 1em;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sadEmoticon{
+    height: 2em;
+    width: 2em;
+    display: none;
+}
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.job-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: rgb(241, 255, 240);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    gap: 1em;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in 5s ease forwards;
+}
+.job-image-container {
+    display: flex;
+    border-radius: 100%;
+    height: 8em;
+    width: 8em;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.job-companyNmae-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 1em;
+    width: 18em;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.job-info-container-general {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.job-info-container {
+    display: flex;
+    height: 5em;
+    gap: 1em;
+    overflow: hidden;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    width: 2em;
+    height: 2em;
+}
+.job-button-container{
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .checkbox-container {
+        gap: 0.5em;
+    }
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .checkbox-container {
+        gap: 1em;
+    }
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .checkbox-container {
+        gap: 1.5em;
+    }
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .job-card {
+        padding: 1.5em;
+        margin: 2em;
+        gap: 1.5em;
+        align-items: center;
+    }
+}
+@media (min-width: 1201px) {
+    .form-search {
+        width: 50em;
+    }
+    .checkbox-container {
+        gap: 1.5em;
+    }
+    .job-card {
+        padding: 2em;
+        margin: 2em;
+        gap: 2em;
+        align-items: center;
+        width: 20em;
+    }
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

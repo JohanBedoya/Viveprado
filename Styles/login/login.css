@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    background-image: url(../../assets/images/login-background.svg);
+    backdrop-filter: blur(200px);
+    background-size: 70em;
+    height: 25em;
+    background-position: center;
+}
+.login-container {
+    padding: 1em;
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.login-tittle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.email-container {
+    display: flex;
+}
+.email {
+    display: flex;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    height: 3em;
+    width: 20em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.password-container{
+    display: flex;
+}
+.password {
+    display: flex;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    height: 3em;
+    width: 20em;
+    margin: 0.5em 1em;
+    border-radius: 10px;
+}
+.button-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.button {
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgb(225, 255, 245);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .login-container {
+        width: 30em;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .login-container {
+        width: 50em;
+    }
+    .email-container {
+        width: 40em;
+    }
+    .email {
+        width: 50em;
+    }
+    .password-container{
+        width: 40em;
+    }
+    .password {
+        width: 50em;
+    }   
+     main {
+        background-size: 100em;
+        height: 25em;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .login-container {
+        width: 50em;
+    }
+    .email-container {
+        width: 40em;
+    }
+    .email {
+        width: 50em;
+    }
+    .password-container{
+        width: 40em;
+    }
+    .password {
+        width: 50em;
+    }
+    main {
+        background-size: 100em;
+        height: 25em;
+    }
+}

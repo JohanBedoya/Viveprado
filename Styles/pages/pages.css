@@ -1,0 +1,25 @@
+.nextPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.pages {
+    display: flex;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 1em;
+}
+a {
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+.image-page {
+    width: 1em;
+    height: 1em;
+}
+.principal-number-page {
+    font-size: 1.5em;
+}

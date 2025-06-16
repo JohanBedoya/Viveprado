@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.container-radio {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #e0e5ec;
+    padding: 5rem 2rem;
+}
+
+.radio-titulo {
+    text-align: center;
+}
+
+.radio-reproductor {
+    width: 20rem;
+    height: 26.67rem;
+    background: #e0e5ec;
+    border-radius: 1.25rem; 
+    padding: 1.25rem;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.logo img {
+    width: 8rem;
+    height: 8rem; 
+    border-radius: 50%;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #bebebe, -0.3125rem -0.3125rem 0.625rem #ffffff;
+}
+
+.tiempo {
+    text-align: start;
+}
+
+.tiempo #time {
+    font-size: 1.25rem;
+    width: 4.5rem;
+    display: inline-block;
+}
+
+
+.progress__bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; 
+    height: 0.625rem;
+    background: #e0e5ec; 
+    outline: none; 
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out; 
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        background: #4CAF50; 
+        cursor: pointer; 
+        border-radius: 50%; 
+        border: none; 
+        box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.8); 
+        transition: background-color 0.15s ease-in-out; 
+        transform: translateY(-20%);
+    }
+
+    &:hover::-webkit-slider-thumb {
+        background-color: #45a049; 
+    }
+
+    &:focus::-webkit-slider-thumb {
+        box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.8);
+    }
+
+    &::-webkit-slider-runnable-track {
+        width: 100%; 
+        height: 0.625rem;
+        background: #a0a0a0; 
+        border-radius: 0.3125rem;
+    }
+}
+
+.volumen {
+    display: flex;
+    align-items: center;
+}
+
+.volumen label {
+    display: flex;
+    align-items: center;
+    margin-right: 0.625rem;
+}
+
+.volumen label i {
+    font-size: 1.5rem; 
+    color: #555; 
+}
+
+.volume__bar {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.625rem !important;
+    background: #a0a0a0;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        background: #4caf50;
+        cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.8); 
+        transition: background-color 0.15s ease-in-out;
+        transform: translateY(-40%);
+    }
+
+    &:hover::-webkit-slider-thumb {
+        background-color: #45a049;
+    }
+
+    &:focus::-webkit-slider-thumb {
+        box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.8);
+    }
+
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 0.3125rem;
+        background: #a0a0a0;
+        border-radius: 0.3125rem;
+    }
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.control-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #bebebe, -0.3125rem -0.3125rem 0.625rem #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+.play {
+    background-color: #6AB165;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.play:hover {
+    transform: scale(1.1);
+}
+.pause{
+    background-color: #555;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.pause:hover {
+    transform: scale(1.1);
+}
+.control-btn:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.presentacion-emisora {
+    width: 100%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    text-align: center; 
+}
+
+.presentacion__titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.presentacion__parrafo {
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.btn-emisora {
+    background-color: #6AB165;
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn-emisora:hover {
+    transform: scale(1.1);
+    background-color: #57bb4f;
+}
+
+@media (max-width: 768px) {
+    .presentacion-emisora {
+        width: 100%;
+        max-width: 35rem;
+        margin: 0 auto; 
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .presentacion__parrafo {
+        text-align: justify;
+        width: 100%; 
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    
+    .container-radio {
+        flex-direction: column;
+    }
+    
+    .radio-player {
+        width: 18rem;
+        height: 24rem; 
+    }
+
+    .logo img {
+        width: 6rem; 
+        height: 6rem; 
+    }
+
+    .control-btn {
+        width: 3rem; 
+        height: 3rem; 
+    }
+
+    .time {
+        font-size: 1rem; 
+    }
+    
+    .presentacion-emisora {
+        justify-items: start;
+    }
+
+    .presentacion__titulo {
+        margin-top: 2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion-emisora {
+        width: 100%;
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+    
+    .presentacion__parrafo {
+        text-align: justify;
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto; 
+    }
+    
+    .container-radio {
+        flex-direction: column;
+    }
+    
+    .radio-player {
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .logo img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .control-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .time {
+        font-size: 0.875rem;
+    }
+    
+    .presentacion__parrafo {
+        max-width: 100%;
+    }
+}

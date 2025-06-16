@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Styles/header/header.css">
+    <link rel="stylesheet" href="/Styles/footer/footer.css">
+    <link rel="stylesheet" href="/Styles/podcastReproductor/podcastReproductor.css">
+</head>
+<body>
+    <!-- Aquí encuentras los elementos de la barra de navegación  -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html"><img src="../../assets/images/LOGO.PNG" alt="logo"></a>
+
+            <i class="fa-solid fa-bars abrir-menu" id="abrir"></i>
+            <div class="nav__menu" id="navbar">
+                <i class="fa-solid fa-x cerrar-menu" id="cerrar"></i>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../../index.html" id="inicio">Inicio</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="../../quehaypahacer.html">¿Qué hay pa’ hacer?</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="../informacion.html">Información</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Personajes</a></li>
+                            <li><a href="#imagenes">Imágenes</a></li>
+                            <li><a href="#">Noticias</a></li>
+                        </ul>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="">Tienda</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="../ofertasEmpleo.html">Empleos</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="#" id="radio">Radio</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="../podcast.html">Podcast</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Aquí empieza la estructura de reproductor -->
+        <div class="player-container">
+            <div class="image-player-container">
+                <img src="/assets/images/podcast-img/logo-viveprado-2.png" alt="" class="image-podcast">
+            </div>
+        <section class="rigth-infoPlayer">
+            <div class="tittle-media-player">
+                <p class="tittle-podcast">¿Por qué la educación se debe enfocar en el no consumo de los estudiantes?</p>
+            </div>
+            <!-- Se crea una linea del tiempo totalmente responsiva de la pista -->
+            <div class="timeBar">
+                <audio id="myAudio" width="320" height="176">
+                    <!-- En este punto es donde se suben los audios -->
+                    <source src="/assets/audios/Ramon-Antonio-Echavarria-Patino.mp3" type="audio/mpeg">
+                </audio>
+                <!-- La duración y el tiempo se ven reflejados en tiempo real -->
+                <input class="slider" id="slider" type="range" min="0" step="1" onchange="seekAudio()">
+                <p id="time">Tiempo: 00:00 / Duración: 00:00</p>
+            </div>
+            <div class="controlsPlayer-container">
+                <img src="/assets/icons/boton-de-reproduccion.svg" alt="" class="play" onclick="playAudio()">
+                <img src="/assets/icons/pausa.svg" alt="" class="pause" onclick="pauseAudio()">
+            </div>
+        </section>    
+        </div>
+        <section class="description-podcast">
+            <div class="options-container">
+                <a href="/assets/audios/MegaC-Guitar.wav" class="dowload">
+                    <p class="dowloadAudio">
+                        Descargar Pista 
+                    </p> 
+                </a> <hr>
+                <a href="podcast.html" class="back-option">
+                    <p class="return">
+                        Regresar a Podcast 
+                    </p> 
+                </a> <hr>
+                <p class="date">
+                    Subido El 29/05/2024
+                </p>
+            </div>
+            <!-- Titulo del podcast -->
+            <div class="tittlePodcast-container">
+                <h1 class="tittle-podcast">
+                    DESCRIPCIÓN
+                </h1>
+            </div>
+            <!-- Descripción del podcast -->
+            <div class="description-podcast-container">
+                <p class="description">
+                    En este episodio conoceremos a Ramón Antonio Echavarría, pionero educativo de la Cooperativa Coomulsap, que desde su psicología del amor, la escucha y el respeto fundo los primeros cimientos desde Yurupari hasta el Colegio Empresarial.
+Entre las palabras y la música Ramón, nos cuenta su trayectoría por el Municipio de Ebejico hasta el Corregimiento de San Antonio de Prado, ¿En qué colegio estudió? y ¿Cuál fue su primer trabajo?, Escucha nuestro podcast y conocerás mucho más sobre la vida de Ramón.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="/js/header.js"></script>
+    <script src="/js/player.js"></script>
+</body>
+</html>

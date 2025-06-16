@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+}
+header {
+    background-color: rgb(18, 131, 18);
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 53em;
+}
+.podcast-select{
+    display: flex;
+    background-color: aliceblue;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+}
