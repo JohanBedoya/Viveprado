@@ -32,3 +32,4 @@ iconoFlechaRadio.addEventListener('click', () => {
     // Alterna la visibilidad del menú dropdown de radio
     dropdownMenuRadio.classList.toggle('visible-dropdown');
 });
+
