@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de trabajo - Vive Prado</title>
-    <link rel="stylesheet" href="../Styles/header/header.css">
     <link rel="stylesheet" href="../Styles/footer/footer.css">
     <link rel="stylesheet" href="../Styles/generalTittle/generalTittle.css">
     <link rel="stylesheet" href="../Styles/jobofferts/jobOfferts.css">
     <link rel="stylesheet" href="../Styles/widget/widget.css">
+    <link rel="stylesheet" href="../Styles/Inicio/header/header.css">
 </head>
 <body>
+    
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="../index.html"><img src="../../assets/images/LOGO.PNG" alt="logo"></a>
+
+            <i class="fa-solid fa-bars abrir-menu" id="abrir"></i>
+            <div class="nav__menu" id="navbar">
+                <i class="fa-solid fa-x cerrar-menu" id="cerrar"></i>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" id="inicio">Inicio</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="../quehaypahacer.html">¿Qué hay pa’ hacer?</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="../informacion.html">Información</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#imagenes">Imágenes</a></li>
+                        </ul>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="tienda.html">Tienda</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="ofertasEmpleo.html">Empleos</a>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item dropdown">
+                        <a href="../index.html#radioFM" id="radio">Radio</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="podcast.html">Podcast</a></li>
+                        </ul>
+                    </li>
+                    <hr class="separador">
+                    <li class="nav__item">
+                        <a href="https://directorio.viveprado.com/" id="directorio" style="color: green  !important;;">Directorio Viveprado</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--
     <header class="header" id="header">
         <nav class="nav">
             <a href="index.html"><img src="../assets/images/LOGO.PNG" alt="logo"></a>
@@ -54,7 +104,7 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
     <main>
         <!-- Cada titulo en celulares tiene caracteristiicas en común, por eso tiene un apartado propio en css -->
         <div class="tittle-oferts">

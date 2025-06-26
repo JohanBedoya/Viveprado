@@ -34,7 +34,7 @@
                     </li>
                     <hr class="separador">
                     <li class="nav__item dropdown">
-                        <a href="html/informacion.html">Información</a>
+                        <a href="informacion.html">Información</a>
                         <i class="fas fa-angle-down"></i>
                         <ul class="dropdown-menu">
                             <li><a href="#">Acerca de</a></li>
@@ -180,16 +180,12 @@
         <h1 class="contacto__titulo">¡PONTE EN CONTACTO!</h1>
         <p class="contacto__parrafo">¡Cuéntanos tu experiencia! <br>
             Estamos para vivirla contigo.</p>
-        <form>
-            <label for="nombre-form">Nombre*</label>
-            <input type="text" id="nombre-form" placeholder="Introduce tu nombre">
-            <label for="correo-form">Correo electronico*</label>
-            <input type="text" id="correo-form" placeholder="Introduce tu correo electronico">
-            <label for="celular-form">Número de celular*</label>
-            <input type="tel" id="celular-form" placeholder="Introduce tu número de celular">
-            <label for="textarea-form">Tú mensaje*</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Introduce tu mensaje"></textarea>
-            <button type="submit" class="btn-contacto">¡Envía ya!</button>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="278998d9-dab9-4e69-85c2-89d928cc3b68">
+            <input placeholder="Nombre" type="text" name="name" required>
+            <input placeholder="Correo" type="email" name="email" required>
+            <textarea placeholder="Mensaje" name="message" rows="4" cols="4" required></textarea>
+            <button class="btn-contacto" type="submit"> Enviar mensaje </button>
         </form>
     </section>
 
